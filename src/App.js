@@ -17,7 +17,7 @@ function App() {
     <Cart />
     <Router>
 
-      <Routes>
+      <Routes basename={process.env.PUBLIC_URL} >
         <Route path="/" element={<LayOut />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/product" element={<ProductDetails />} />
