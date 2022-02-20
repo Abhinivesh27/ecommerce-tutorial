@@ -1,4 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
@@ -7,7 +6,7 @@ const products = [
   {
     id: 1,
     name: 'Throwback Hip Bag',
-    href: '#',
+    href: '/',
     color: 'Salmon',
     price: '$90.00',
     quantity: 1,
@@ -17,7 +16,7 @@ const products = [
   {
     id: 2,
     name: 'Medium Stuff Satchel',
-    href: '#',
+    href: '/',
     color: 'Blue',
     price: '$32.00',
     quantity: 1,
@@ -122,7 +121,7 @@ export default function Cart() {
                     <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
                     <div className="mt-6">
                       <a
-                        href="/"
+                        href="/checkout"
                         className="flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                       >
                         Checkout
